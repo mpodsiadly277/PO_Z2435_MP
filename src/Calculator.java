@@ -12,4 +12,9 @@ public class Calculator {
     public double distanceY(Point a, Point b) {
         return Math.abs(a.y - b.y);
     }
+
+  public static double AreaSum(Shape shape1, Shape shape2) {
+    return shape1.area() + shape2.area();
+    }
+
 }

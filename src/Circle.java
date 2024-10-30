@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle extends Shape{
     Point center;
     double diameter;
     double radius;
@@ -8,7 +8,12 @@ public class Circle {
         this.diameter = diameter;
         this.radius = (diameter / 2);
     }
-    double area(){
+
+    public Circle(float i) {
+        radius = i;
+    }
+
+    public double area(){
         return radius * radius * Math.PI;
     }
     double circumference(){
