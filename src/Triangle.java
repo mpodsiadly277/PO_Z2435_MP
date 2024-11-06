@@ -1,8 +1,9 @@
 public class Triangle extends Shape {
-private double side;
+public double side;
 
 public Triangle(double side) {
     this.side = side;
+   //  if (side = String)
 }
 
 public double area() {
