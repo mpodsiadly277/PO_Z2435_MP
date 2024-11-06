@@ -3,8 +3,11 @@ public class Circle extends Shape{
     double diameter;
     double radius;
 
-    public Circle(Point center, double diameter) {
+    public Circle(Point center, double diameter) throws BadShapeException {
         this.center = center;
+        if (diameter < 1) {
+            throw new BadShapeException("Średnica powinna być większa od 1.");
+        }
         this.diameter = diameter;
         this.radius = (diameter / 2);
     }
